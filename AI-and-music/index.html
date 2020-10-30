@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mickaël et Clément</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- https://youtube-mp4.download/fr/the-online-converter -->
+        <!-- Utilisation de JQuery --><script src='jquery-3.1.0.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!--  --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!--  --><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!--  --><link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <!-- Fichier CCS --><link rel="stylesheet" href="css/style.css">
+        <!-- Fichier JS --><script src="js/script.js"></script>
+        <!-- reactJS X2-->
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        s<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top" style="background:#33be20ec">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <!--<li><a href="#about">Musique et IA</a></li>-->
+                        <li><a href="#histoire">Histoire</a></li>
+                        <li><a href="#creation">Sons créés</a></li>
+                        <li><a href="#params">Développements</a></li>
+                        <li><a href="#adapthuman">Rôle Être Humain</a></li>
+                        <li><a href="#adaptai">Rôle de l'IA</a></li>
+                        <li><a href="#actual">Rôle actuel</a></li>
+                        <!--
+                            <li><a href="#about">Musique et IA</a></li>
+                        <li><a href="#histoire">Histoire</a></li>
+                        <li><a href="#sons">Création des sons</a></li>
+                        <li><a href="#params">Sons objectivisés</a></li>
+                        <li><a href="#adaphuman">Adaptation de l'Être Humain</a></li>
+                        <li><a href="#adaptai">Adaptation de l'IA</a></li>
+                        <li><a href="#actual">Rôle actuel</a></li>
+                        -->
+                    </ul>
+                </div>
+            </div>     
+        </nav>
+       
+        <section id="about" class="container-fluid">
+            <div class="profile-picture">
+                <img src="images/me.jpg" alt="John" class="img-circle">
+            </div>
+            <div class="heading">
+                <h1>Musique et IA</h1>
+            </div>
+        </section>
+        
+
+        
+        <section id="histoire">
+            <div class="container">
+                <div class="white-divider"></div>
+                <div class="heading">
+                    <h2>Histoire</h2>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>1950</h3>
+                                    <h4>Machine de Turing</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Test de Turing par Alan Turing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container-inverted">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>1956</h3>
+                                    <h4>Officialisation de l'intelligence artificielle.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Ce dommaine a été reconu comme un véritable domaine scientifique.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>1957</h3>
+                                    <h4>Naissance d'Illiac Suite.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lejaren Hiller et Leonard Isaacson, avaient programmé un algorithme qui génère aléatoirement des sons, appris grâce aux compositions de grands artistes classiques.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container-inverted">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>2014-2016</h3>
+                                    <h4>Réutilisation de l'IA dans les sons.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Suite un un grand moment d'oubli, Google renoue l'exploitation de l'IA dans les sons.</p>
+                                    <p>La firme californienne avait en effet présenté une mélodie pour piano certes relativement ridicule, mais qui avait le mérite d'avoir été entièrement imaginée par une IA.</p>
+                                    <a href="https://cdn2.vox-cdn.com/uploads/chorus_asset/file/6577761/Google_-_Magenta_music_sample.0.mp3">Création</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>				
+					<li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>2017</h3>
+                                    <h4>Utilisation de l'IA dans la musique.</h4>
+                                    <p class="text-muted"><small class="glyphicon glyphicon-time"></small> du 06/08/2015 au 24/08/2015</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>La création des sons par l'IA commence à devenir intéressante pour la musique.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container-inverted">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Aujourd'hui</h3>
+                                    <h4>Mise en place de différents modèles.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Les rôles de l'IA dans la musique emmergent et sont creusés de manière pratique.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>	
+                
+                </ul>
+            </div>           
+        </section>
+                
+        <section id="creation">
+            <div class="container">
+                 <div class="red-divider"></div>
+                <div class="heading">
+                    <h2>Premières musiques crées.</h2>
+                </div>
+                <div class="row">
+                    <!-- https://www.bing.com/videos/search?q=jquery&&view=detail&mid=558F452B00219AFE8D6C558F452B00219AFE8D6C&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Djquery%26qs%3Dn%26form%3DQBVDMH%26sp%3D-1%26ghc%3D1%26pq%3Djquery%26sc%3D8-6%26sk%3D%26cvid%3D9FCEAC493E65450092FF9442ED6EFA94 -->
+                    <div style="text-align: center;">
+                        <button class="button-red" id='a1'>Vidéo 1</button>
+                        <button class="button-red" id='a2'>non dvlp</button>
+                        <button class="button-red" id='a3'>non dvlp</button>
+                        <button class="button-red" id='a4'>Vidéo 4 </button>
+                    </div>
+                    <div id='b1'>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/11.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>Première pièce par ordinateur.</h4>
+                            <p>C'est en 1957 qu'est née Illiac Suite, la toute première pièce écrite par un ordinateur. 
+                                Ses deux papas, Lejaren Hiller et Leonard Isaacson, avaient programmé un algorithme 
+                                qui génère aléatoirement des sons, appris grâce aux compositions de grands artistes classiques.  
+                            </p>
+                        </div>
+                    </div>
+                    <div id='b2'>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/12.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>text</p>
+                        </div>
+                    </div>
+                    <div id='b3'>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/13.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>text</p>
+                        </div>
+                    </div>
+                    <div id='b4'>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/14.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>Une IA crée en 5 ans.</h4>
+                            <p>
+                                L'intelligence artificielle de Hexachords, va être mise à disposition des compositeurs 
+                                dans le logiciel Orb Composer. La vocation de ce dernier étant de faciliter les travaux des compositeurs et de leur 
+                                permettre un gain de temps important.
+                            </p>    
+                            <p>    
+                                Hexachords a développé une intelligence artificielle capable de composer de la musique
+                                Dans Orb Composer l’Intelligence Artificielle Hexachords pré-compose dynamiquement des partitions 
+                                en fonction de choix artistiques du compositeur, exprimés au travers de paramètres musicaux haut niveau 
+                                (style, noirceur,…) et bas niveau (accords, instruments,… ).
+                                Puis le compositeur exporte les fichiers MIDI correspondant (MIDI : format de fichier dédié à la musique).
+                                Enfin il peut créer modifier/étoffer cette composition (dans son logiciel de MAO favori) pour créer sa 
+                                propre composition. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+		<section id="params">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>Params</h2>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                  
+                      <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <!--
+                            <div class="item">
+                                <div class="col-sm-7">
+                                    <video width='100%' src="videos/21.mp4" controls ></video>
+                                </div>
+                                <div class="col-sm-5">
+                                    <p>text</p>
+                                </div>
+                            </div>
+                            -->
+                            <div class="item active">
+                                <div class="col-sm-7">
+                                    <video width='100%' src="videos/22.mp4" controls ></video>
+                                </div>
+                                <div class="col-sm-5">
+                                    <h4>Transformer le style d'une musique.</h4>
+                                    <p>Fin mai 2018, les chercheurs de l’équipe AI Research de Facebook ont dévoilé leur dernière création : 
+                                        un réseau de neurones capable de faire évoluer le style d’un morceau de musique en un autre.
+                                    </p>
+                                    <p>
+                                        Au-delà du caractère très innovant du projet, on doit bien admettre que le fonctionnement de cette 
+                                        intelligence artificielle capable de transformer un style de musique en un autre, est tout bonnement révolutionnaire. 
+                                        Tout d’abord, car si l’on en croit le <a href="https://arxiv.org/pdf/1805.07848.pdf" >livre blanc</a> publié en ligne : il s’agit d’une grande première, 
+                                        car aucune équipe de recherche en intelligence artificielle n’avait encore créé une méthode d’apprentissage 
+                                        non supervisée permettant de recréer de la musique grâce à un réseau de neurones. Ensuite, parce que les premiers 
+                                        tests, qui ont été réalisés dans le cadre de ce projet baptisé « A Universal Music Translation Network » ont 
+                                        démontré qu’il était très difficile de reconnaître le morceau de base de celui généré tant la qualité est 
+                                        au rendez-vous.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-sm-7">
+                                    <video width='100%' src="videos/23.mp4" controls ></video>
+                                </div>
+                                <div class="col-sm-5">
+                                    <h4>Aider à vous endormir.</h4>
+                                    <p><strong>
+                                        Au Royaume-Uni, une campagne destinée à améliorer le sommeil humain a été boostée par la création d’une berceuse 
+                                        issue du fruit de l’imagination d’une intelligence artificielle.
+                                    </strong></p>
+                                    <p>
+                                        AXA, groupe international français spécialisé dans l’assurance, a décidé de s’intéresser au sommeil de nos amis 
+                                        britanniques dans le cadre d’une campagne dédiée. Selon une étude financée par ce groupe, 54 % des Britanniques 
+                                        luttent pour trouver le sommeil chaque nuit et 10 % d’entre eux souffrent d’insomnie sévère, comme l’explique le 
+                                        Mirror UK.
+                                    </p>
+                                    <p>
+                                        Dans un récent communiqué, AXA explique avoir tenté une expérience inédite, celle de permettre à une intelligence 
+                                        artificielle de composer une berceuse destinée à aider les personnes en proie à des troubles du sommeil.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="item">
+                                <div class="col-sm-7">
+                                    <video width='100%' src="videos/24.mp4" controls ></video>
+                                </div>
+                                <div class="col-sm-5">
+                                    <p>text</p>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                  
+                      <!-- Left and right controls -->
+                        <a class="left carousel-control" style="width: 30px;" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" ></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" style="width: 30px;" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+                  
+        </section>
+                
+        <section id="adapthuman">
+            <div class="container">
+                <div class="red-divider"></div>
+                <div class="heading">
+                    <h2>Adaptation de l'Etre Humain.</h2>
+                </div>
+                <div class="row">
+                    <div id="root54"></div>
+                    <script src="js/reactjs.js"></script>
+                        
+                    
+<!-- 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+-->           
+                    <div>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/31.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>Une musique crées par l'intelligence artificielle.</h4>
+                            <div>
+                            <p>
+                                I am AI, un album de musique pop, est quant à lui annoncé pour ce début d’année (2018), 
+                                mais son premier single est sorti en août. Ses parties instrumentales ont été 
+                                composées automatiquement par le logiciel Amper, en fonction des choix de l’artiste.
+                            </p>
+                            <div id="aime1"></div>
+                            <!-- IMPORTER A LA FIN: script src="js/reactjava.js"></script>-->
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/32.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>Algo... rythmes: quand la musique fait appel à l'intelligence artificielle.</h4>
+                            <div>
+                            <p>
+                                Jeudi 27 octobre 2016. Dans quelques années, les curieux venus garnir les gradins de la Gaîté-Lyrique,
+                                 à Paris, pourront se vanter que c'est ce jour-là, aux alentours de 20h30, lors d'un concert organisé 
+                                 dans le cadre plutôt pointu du festival Intensive Science, qu'ils ont aperçu le futur de la musique. 
+                                 A quoi ressemblent les lendemains qui chantent? A une ribambelle d'artistes (Barbara Carlotti, 
+                                 O, ALB, Lescop, Housse de Racket...) qui défilent sur scène pour interpréter un morceau. Vu ainsi, 
+                                 l'avenir a les traits de L'Ecole des fans. 
+                            </p>
+                            <div id="aime2"></div>
+                            <script src="js/reactjava.js"></script>
+                            </div>
+                            
+                        </div>
+                    </div>
+  
+                </div>
+            </div>        
+        </section>
+
+        <section id="adaptai">
+            <div class="container">
+                 <div class="white-divider"></div>
+                <div class="heading">
+                    <h2>Nous immiter.</h2>
+                </div>
+                <div class="row">
+                    <div>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/41.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h1>Un robot humanoïde chef d’orchestre.</h1>
+                            <p>Le 31 janvier 2020, un concert un peu particulier a eu lieu aux Emirats arabes. Un robot humanoïde 
+                                a pris la place du chef d’orchestre et a dirigé un orchestre de musiciens humains. L’opéra qu’il dirige 
+                                s’intitule Scary Beauty et a été composé spécialement pour ce robot par Keiichiro Shibuya. A travers cet opéra, 
+                                Shibuya interroge notre rapport à la technologie.
+                            </p>
+                            <p><strong>
+                                Un robot ne peut pas transmettre l’énergie et l’émotion nécessaires!
+                            </strong></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/42.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h1>Pourquoi inventer un robot musicien ?</h1>
+                            <p>Cette fois-ci, ce n’est pas dans un but diplomatique que l’armée américaine se lance dans le jazz ! 
+                                La conception de son robot musicien, via l’agence pour les projets de recherche avancée des Etats-Unis, 
+                                servira à explorer les facultés d’apprentissage des intelligences artificielles (IA) et le rapport 
+                                homme-machine à travers la musique. Rien que ça !
+                            </p>
+                            <p>
+                                Notre robot musicien sera évolutif. Il jouera du jazz. Il pourra également improviser un solo et 
+                                s’améliorer au fur et à mesure des répétitions, le tout accompagné d’une haute formation de jazz men 
+                                (humains). Ainsi, les chercheurs pourront mieux comprendre les facultés d’apprentissage des 
+                                intelligences artificielles. Car on parle bien d’apprentissage ici, qui va plus loin qu’un 
+                                simple mimétisme de la part du robot.  Les chercheurs analyseront également le rapport de l’homme 
+                                à la machine, leur manière d’appréhender la musique, leur processus créatif face à un non-humain.
+                            </p>
+                        </div>
+                    </div>
+  
+                </div>
+            </div>        
+        </section>
+
+        <section id="actual">
+            <div class="container">
+                 <div class="red-divider"></div>
+                <div class="heading">
+                    <h2>Rôle actuel.</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/51.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>L’intelligence artificielle au service de la musique, même à l’Eurovision ?</h4>
+                            <p>L’équipe du projet a importé des centaines de chansons de l’Eurovision mélodies et paroles dans un réseau de neurones. 
+                                Ensuite, les algorithmes ont produit des milliers de nouveaux airs et de nouvelles lignes de couplets, 
+                                à partir desquels quelques unités musicales ont été soigneusement sélectionnées et “soudées” dans une chanson.
+                            </p>
+                            <p>
+                                Voici le résultat, découvrez ce véritable petit chef d’oeuvre, “Blue Jeans & Bloody Tears”.
+                            </p>    
+                                
+                        </div>
+                    </div>
+                    <!--<div>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/52.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>text</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-7">
+                            <video width='100%' src="videos/53.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>text</p>
+                        </div>
+                    </div>-->
+                    <div class="col-sm-12">
+                        <h4>Une IA capable d'imiter Travis Scott.</h4>
+                        <p>
+                            Avec son dernier album solo en date Astroworld, Travis Scott a véritablement conquis le monde entier. 
+                            Outre le public, le jeune rappeur américain a su convaincre la critique qui l'a encensé. 
+                            À tel point que l'agence créative Space150 a décidé de mettre au point un bot capable d'imiter Travis Scott, 
+                            des paroles à la mélodie. C'est donc de cette initiative que le morceau Jack Park Canny Dope Man est né. 
+                        </p>
+                        <a href="https://www.mouv.fr/musique/rap-us/travis-scott-le-faux-morceau-cree-par-une-intelligence-artificielle-ca-dit-quoi-357872" target="_blank">Site internet de la vidéo.</a>
+                    </div>
+  
+                </div>
+            </div>        
+        </section>
+    
+        <footer>
+            <a href="#about">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </footer>
+                
+        
+        
+    </body>
+
+</html>
+
+<!--<div class="col-sm-7">
+                            <video width='100%' src="videos/31.mp4" controls ></video>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>Une musique crées par l'intelligence artificielle.</h4>
+                            <div>
+                            <p>
+                                I am AI, un album de musique pop, est quant à lui annoncé pour ce début d’année (2018), 
+                                mais son premier single est sorti en août. Ses parties instrumentales ont été 
+                                composées automatiquement par le logiciel Amper, en fonction des choix de l’artiste.
+                            </p>
+                            
+                            </div>
+                            
+                        </div>-->
+                        
